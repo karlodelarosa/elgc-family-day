@@ -1,4 +1,5 @@
 import './assets/main.css'
+import 'vue-flux/style.css';
 import { MotionPlugin } from '@vueuse/motion'
 import { createApp } from 'vue'
 import App from './App.vue'

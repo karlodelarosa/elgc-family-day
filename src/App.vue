@@ -1,12 +1,14 @@
 <script setup>
 import Brand from './components/icons/Brand.vue';
 import Countdown from './components/Countdown.vue';
+import ImageCarousel from './components/ImageCarousel.vue';
+import ProgressPerks from './components/ProgressPerks.vue';
 </script>
 
 <template>
   <div class="relative min-h-screen overflow-hidden bg-white">
-    <div class="relative z-10">
-      <div class="background" style="z-index: -1;">
+    <div class="relative z-10 h-screen">
+      <div class="background h-screen" style="z-index: -1;">
         <span></span>
         <span></span>
         <span></span>
@@ -41,13 +43,19 @@ import Countdown from './components/Countdown.vue';
           </div>
         </div>
 
+        <div class="flex flex-row gap-8 raleway">
+          <div class="bg-blue-300/30 py-1 px-3 text-xs rounded-md hover:bg-blue-300/60 transition-all cursor-pointer">Event Details</div>
+          <div class="bg-blue-300/30 py-1 px-3 text-xs rounded-md hover:bg-blue-300/60 transition-all cursor-pointer">Perks</div>
+          <div class="bg-blue-300/30 py-1 px-3 text-xs rounded-md hover:bg-blue-300/60 transition-all cursor-pointer">Contact</div>
+        </div>
+
         <a class="hidden lg:block pr-4" href="https://docs.google.com/forms/d/e/1FAIpQLSePEVjMQiBHBggpPCSGhXThAVvLX57KfuFgmBX5LCca3q6m5A/viewform?usp=dialoga" target="_blank" rel="noopener">
           <button class="raleway bg-orange-400 w-fit py-3 px-6 text-white rounded-lg">Sign up now</button>
         </a>
       </header>
 
-      <main class="w-full flex flex-col items-center justify-center lg:pt-6">
-        <img src="/src/assets/hero2.png" class="w-full lg:w-2/3 xl:w-4/8 2xl:w-1/2 floating" alt="Floating Hero" />
+      <div class="w-full flex flex-col items-center justify-center">
+        <img src="/src/assets/hero2.png" class="w-full lg:w-2/5 xl:w-5/12 floating" alt="Floating Hero" />
 
         <h1 class="text-4xl text-center text-black/80 font-bold lg:text-6xl text-transparent bg-clip-text text-2xl animated-sunset-text bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600">Family Day 2026</h1>
 
@@ -66,8 +74,119 @@ import Countdown from './components/Countdown.vue';
             </a>
           </div>
         </div>
-      </main>
+      </div>
     </div>
+
+    <div class="relative z-10 h-screen bg-red-100 p-6">
+      <div class="container mx-auto h-full">
+        <div class="grid grid-cols-2 h-full flex items-center justify-center gap-x-5">
+          <div class="flex flex-col gap-y-10 ">
+            <h2 class="text-5xl text-black/80 font-bold lg:text-6xl text-transparent bg-clip-text text-2xl animated-sunset-text bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600">More Than Just a Getaway</h2>
+
+            <div class="flex flex-col gap-y-6 text-xl">
+              <p class="raleway">
+                Church isn’t just what happens inside four walls — it’s a family that grows, laughs, rests, and worships together.
+              </p>
+
+              <p class="raleway">
+                This Family Day is more than a break from routine — it’s a moment to reconnect with each other, build lasting memories, and enjoy God’s creation. Whether through a quiet moment by the sea or a laugh shared during a game, our goal is simple: to strengthen our bonds as one body in Christ.
+              </p>
+
+              <p class="raleway">
+                Let’s rest, rejoice, and remember why we’re better together.
+              </p>
+            </div>
+
+            <div class="raleway">
+              <strong class="italic">
+                “How good and pleasant it is when God’s people live together in unity!” – Psalm 133:1
+              </strong>
+            </div>
+          </div>
+
+          <div class="lg:pl-10 w-full">
+            <img src="https://i.ibb.co/Lhz5psL8/family-1976162-1280-1-1.png" alt="Family" class="w-full floating">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative z-10 h-screen">
+      <div class="container mx-auto px-6 py-12 bg-white">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      
+          <!-- Image / Placeholder -->
+          <div class="aspect-[6/8] bg-gray-100 rounded-xl shadow-inner">
+            <ImageCarousel />
+          </div>
+
+          <!-- Event Details -->
+          <div class="space-y-12">
+            <h2 class="text-5xl text-black/80 font-bold lg:text-6xl text-transparent bg-clip-text text-2xl animated-sunset-text bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600">Event Details</h2>
+
+            <div class="space-y-1">
+              <h3 class="text-3xl font-semibold text-gray-700">Pinewoods Beach Resort</h3>
+              <p class="text-gray-500 text-base">Infanta, Quezon</p>
+            </div>
+
+            <div class="space-y-1">
+              <p class="text-gray-600">
+                <span class="font-medium">Date:</span> June 13–14, 2026 (Saturday–Sunday)
+              </p>
+            </div>
+
+            <div class="raleway">
+              <p class="text-gray-600 font-medium mb-2"><strong>Inclusions:</strong></p>
+              <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <li>Transit Bus</li>
+                <li>Accommodation</li>
+                <li>Meals</li>
+                <li>Activities</li>
+              </ul>
+            </div>
+
+            <div class="pt-2 border-t">
+              <p class="text-gray-600 text-sm">
+                <span class="font-medium">Things to bring:</span> To be announced.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="relative z-10 h-screen p-6">
+      <div class="container mx-auto h-full flex flex-col justify-center items-center">
+        <h2
+          class="text-5xl pb-4 lg:text-6xl font-bold bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 bg-clip-text text-transparent animate-gradient"
+        >
+          Progress Perks
+        </h2>
+
+        <ProgressPerks />
+      </div>
+    </div>
+
+    <div class="relative z-10 h-screen p-6">
+  <div class="container mx-auto h-full flex flex-col justify-center items-center text-center space-y-6">
+    <h2
+      class="text-5xl lg:text-7xl font-extrabold bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 bg-clip-text text-transparent animate-gradient-slow drop-shadow-md"
+    >
+      See you there!
+    </h2>
+
+    <p class="text-lg text-gray-600 max-w-md raleway">
+      Join us in making this Family Day unforgettable — fun, laughter, and surprises await.
+    </p>
+
+    <a class="hidden lg:block pr-4" href="https://docs.google.com/forms/d/e/1FAIpQLSePEVjMQiBHBggpPCSGhXThAVvLX57KfuFgmBX5LCca3q6m5A/viewform?usp=dialoga" target="_blank" rel="noopener">
+      <button class="raleway bg-orange-400 w-fit py-3 px-6 text-white rounded-lg">Sign up now</button>
+    </a>
+  </div>
+</div>
+
+
   </div>
 </template>
 
