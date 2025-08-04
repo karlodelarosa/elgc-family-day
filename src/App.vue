@@ -43,10 +43,12 @@ import ProgressPerks from './components/ProgressPerks.vue';
           </div>
         </div>
 
-        <div class="flex flex-row items-center gap-8 raleway">
-          <a href="#vision" class="bg-blue-300/30 py-1 px-3 text-xs rounded-md hover:bg-blue-300/60 transition-all cursor-pointer">Vision</a>
-          <a href="#event-details" class="bg-blue-300/30 py-1 px-3 text-xs rounded-md hover:bg-blue-300/60 transition-all cursor-pointer">Event Details</a>
-          <a href="#perks" class="bg-blue-300/30 py-1 px-3 text-xs rounded-md hover:bg-blue-300/60 transition-all cursor-pointer">Perks</a>
+        <div class="hidden lg:block">
+          <div class="flex flex-row items-center gap-8 raleway">
+            <a href="#vision" class="bg-blue-300/30 py-1 px-3 text-xs rounded-md hover:bg-blue-300/60 transition-all cursor-pointer">Vision</a>
+            <a href="#event-details" class="bg-blue-300/30 py-1 px-3 text-xs rounded-md hover:bg-blue-300/60 transition-all cursor-pointer">Event Details</a>
+            <a href="#perks" class="bg-blue-300/30 py-1 px-3 text-xs rounded-md hover:bg-blue-300/60 transition-all cursor-pointer">Perks</a>
+          </div>
         </div>
 
 
