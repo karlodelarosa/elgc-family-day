@@ -53,7 +53,7 @@ import ProgressPerks from './components/ProgressPerks.vue';
 
 
         <a class="hidden lg:block pr-4" href="https://docs.google.com/forms/d/e/1FAIpQLSePEVjMQiBHBggpPCSGhXThAVvLX57KfuFgmBX5LCca3q6m5A/viewform?usp=dialoga" target="_blank" rel="noopener">
-          <button class="raleway bg-orange-400 w-fit py-3 px-6 text-white rounded-lg">Sign up now</button>
+          <button class="raleway bg-orange-400 w-fit py-3 px-6 text-white rounded-lg hover:bg-orange-500 transition-all cursor-pointer">Sign up now</button>
         </a>
       </header>
 
@@ -73,7 +73,7 @@ import ProgressPerks from './components/ProgressPerks.vue';
 
           <div class="pt-5 block lg:hidden">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSePEVjMQiBHBggpPCSGhXThAVvLX57KfuFgmBX5LCca3q6m5A/viewform?usp=dialoga" target="_blank" rel="noopener">
-              <button class="raleway bg-orange-400 w-fit py-3 px-6 text-white rounded-lg">Sign up now</button>
+              <button class="raleway bg-orange-400 w-fit py-3 px-6 text-white rounded-lg hover:bg-orange-500 transition-all cursor-pointer">Sign up now</button>
             </a>
           </div>
         </div>
@@ -176,15 +176,15 @@ import ProgressPerks from './components/ProgressPerks.vue';
     <h2
       class="text-5xl lg:text-7xl font-extrabold bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 bg-clip-text text-transparent animate-gradient-slow drop-shadow-md"
     >
-      See you there!
+      Family Day 2026
     </h2>
 
     <p class="text-lg text-gray-600 max-w-md raleway">
-      Join us in making this Family Day unforgettable — fun, laughter, and surprises await.
+      Join us in making this Family Day unforgettable — fun, laughter, and surprises await. See you there!
     </p>
 
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSePEVjMQiBHBggpPCSGhXThAVvLX57KfuFgmBX5LCca3q6m5A/viewform?usp=dialoga" target="_blank" rel="noopener">
-      <button class="raleway bg-orange-400 w-fit py-3 px-6 text-white rounded-lg">Sign up now</button>
+      <button class="raleway bg-orange-400 w-fit py-3 px-6 text-white rounded-lg hover:bg-orange-500 transition-all cursor-pointer">Sign up now</button>
     </a>
   </div>
 </div>
