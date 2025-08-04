@@ -29,13 +29,25 @@ import Countdown from './components/Countdown.vue';
         <span></span>
       </div>
 
-      <header class="flex flex-col lg:flex-row items-center justify-center p-4">
-        <Brand />
-        <p class="text-sm text-center raleway pb-3">Emmanuel's Living Gospel Church</p>
+      <header class="container mx-auto flex items-center justify-center lg:justify-between p-4">
+        <div class="flex flex-col lg:flex-row items-center justify-center">
+          <Brand />
+          <p class="text-sm text-left raleway lg:hidden">Emmanuel's Living Gospel Church</p>
+          <div class="flex flex-col items-start hidden lg:block">
+            <p class="text-sm text-left raleway">Emmanuel's</p>
+            <p class="text-sm text-left raleway">Living</p>
+            <p class="text-sm text-left raleway">Gospel</p>
+            <p class="text-sm text-left raleway">Church</p>
+          </div>
+        </div>
+
+        <a class="hidden lg:block pr-4" href="https://docs.google.com/forms/d/e/1FAIpQLSePEVjMQiBHBggpPCSGhXThAVvLX57KfuFgmBX5LCca3q6m5A/viewform?usp=dialoga" target="_blank" rel="noopener">
+          <button class="raleway bg-orange-400 w-fit py-3 px-6 text-white rounded-lg">Sign up now</button>
+        </a>
       </header>
 
-      <main class="w-full flex flex-col items-center justify-center">
-        <img src="/src/assets/hero2.png" class="w-full xl:w-5/8 floating" alt="Floating Hero" />
+      <main class="w-full flex flex-col items-center justify-center lg:pt-6">
+        <img src="/src/assets/hero2.png" class="w-full lg:w-2/3 xl:w-4/8 2xl:w-1/2 floating" alt="Floating Hero" />
 
         <h1 class="text-4xl text-center text-black/80 font-bold lg:text-6xl text-transparent bg-clip-text text-2xl animated-sunset-text bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600">Family Day 2026</h1>
 
@@ -48,7 +60,7 @@ import Countdown from './components/Countdown.vue';
             <Countdown />
           </div>
 
-          <div class="pt-5">
+          <div class="pt-5 block lg:hidden">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSePEVjMQiBHBggpPCSGhXThAVvLX57KfuFgmBX5LCca3q6m5A/viewform?usp=dialoga" target="_blank" rel="noopener">
               <button class="raleway bg-orange-400 w-fit py-3 px-6 text-white rounded-lg">Sign up now</button>
             </a>
