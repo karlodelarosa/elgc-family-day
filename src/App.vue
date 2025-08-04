@@ -49,7 +49,9 @@ import Countdown from './components/Countdown.vue';
           </div>
 
           <div class="pt-5">
-            <button class="raleway bg-orange-400 w-fit py-3 px-6 text-white rounded-lg ">Sign up now</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSePEVjMQiBHBggpPCSGhXThAVvLX57KfuFgmBX5LCca3q6m5A/viewform?usp=dialoga" target="_blank" rel="noopener">
+              <button class="raleway bg-orange-400 w-fit py-3 px-6 text-white rounded-lg">Sign up now</button>
+            </a>
           </div>
         </div>
       </main>
