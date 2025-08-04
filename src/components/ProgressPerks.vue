@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full px-6 sm:px-12 lg:px-24 py-20 bg-gradient-to-br from-indigo-50/40 to-pink-50/40 rounded relative overflow-hidden">
+  <div class="w-full sm:px-12 lg:px-24 py-20 bg-gradient-to-br from-indigo-50/40 to-pink-50/40 rounded relative overflow-hidden">
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
 
     <!-- Left side: Story -->

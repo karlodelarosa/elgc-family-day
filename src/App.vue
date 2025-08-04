@@ -7,8 +7,8 @@ import ProgressPerks from './components/ProgressPerks.vue';
 
 <template>
   <div class="relative min-h-screen overflow-hidden bg-white">
-    <div class="relative z-10 h-screen">
-      <div class="background h-screen" style="z-index: -1;">
+    <div class="relative z-10 min-h-screen pb-12 lg:pb-0">
+      <div class="background h-full" style="z-index: -1;">
         <span></span>
         <span></span>
         <span></span>
@@ -43,18 +43,19 @@ import ProgressPerks from './components/ProgressPerks.vue';
           </div>
         </div>
 
-        <div class="flex flex-row gap-8 raleway">
-          <div class="bg-blue-300/30 py-1 px-3 text-xs rounded-md hover:bg-blue-300/60 transition-all cursor-pointer">Event Details</div>
-          <div class="bg-blue-300/30 py-1 px-3 text-xs rounded-md hover:bg-blue-300/60 transition-all cursor-pointer">Perks</div>
-          <div class="bg-blue-300/30 py-1 px-3 text-xs rounded-md hover:bg-blue-300/60 transition-all cursor-pointer">Contact</div>
+        <div class="flex flex-row items-center gap-8 raleway">
+          <a href="#vision" class="bg-blue-300/30 py-1 px-3 text-xs rounded-md hover:bg-blue-300/60 transition-all cursor-pointer">Vision</a>
+          <a href="#event-details" class="bg-blue-300/30 py-1 px-3 text-xs rounded-md hover:bg-blue-300/60 transition-all cursor-pointer">Event Details</a>
+          <a href="#perks" class="bg-blue-300/30 py-1 px-3 text-xs rounded-md hover:bg-blue-300/60 transition-all cursor-pointer">Perks</a>
         </div>
+
 
         <a class="hidden lg:block pr-4" href="https://docs.google.com/forms/d/e/1FAIpQLSePEVjMQiBHBggpPCSGhXThAVvLX57KfuFgmBX5LCca3q6m5A/viewform?usp=dialoga" target="_blank" rel="noopener">
           <button class="raleway bg-orange-400 w-fit py-3 px-6 text-white rounded-lg">Sign up now</button>
         </a>
       </header>
 
-      <div class="w-full flex flex-col items-center justify-center">
+      <div class="w-full flex flex-col items-center justify-center pt-6 lg:pt-0">
         <img src="/src/assets/hero2.png" class="w-full lg:w-2/5 xl:w-5/12 floating" alt="Floating Hero" />
 
         <h1 class="text-4xl text-center text-black/80 font-bold lg:text-6xl text-transparent bg-clip-text text-2xl animated-sunset-text bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600">Family Day 2026</h1>
@@ -77,9 +78,9 @@ import ProgressPerks from './components/ProgressPerks.vue';
       </div>
     </div>
 
-    <div class="relative z-10 h-screen bg-red-100 p-6">
+    <div id="vision" class="relative z-10 min-h-screen bg-red-100 px-6 py-12 lg:py-6 flex items-center">
       <div class="container mx-auto h-full">
-        <div class="grid grid-cols-2 h-full flex items-center justify-center gap-x-5">
+        <div class="grid grid-cols-1 lg:grid-cols-2 h-full flex items-center justify-center gap-x-5">
           <div class="flex flex-col gap-y-10 ">
             <h2 class="text-5xl text-black/80 font-bold lg:text-6xl text-transparent bg-clip-text text-2xl animated-sunset-text bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600">More Than Just a Getaway</h2>
 
@@ -104,16 +105,16 @@ import ProgressPerks from './components/ProgressPerks.vue';
             </div>
           </div>
 
-          <div class="lg:pl-10 w-full">
+          <div class="lg:pl-10 w-full order-first lg:order-last">
             <img src="https://i.ibb.co/Lhz5psL8/family-1976162-1280-1-1.png" alt="Family" class="w-full floating">
           </div>
         </div>
       </div>
     </div>
 
-    <div class="relative z-10 h-screen">
+    <div id="event-details" class="relative z-10 min-h-screen">
       <div class="container mx-auto px-6 py-12 bg-white">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
       
           <!-- Image / Placeholder -->
           <div class="aspect-[6/8] bg-gray-100 rounded-xl shadow-inner">
@@ -156,7 +157,7 @@ import ProgressPerks from './components/ProgressPerks.vue';
       </div>
     </div>
 
-    <div class="relative z-10 h-screen p-6">
+    <div id="perks" class="relative z-10 min-h-screen p-6">
       <div class="container mx-auto h-full flex flex-col justify-center items-center">
         <h2
           class="text-5xl pb-4 lg:text-6xl font-bold bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 bg-clip-text text-transparent animate-gradient"
@@ -180,7 +181,7 @@ import ProgressPerks from './components/ProgressPerks.vue';
       Join us in making this Family Day unforgettable — fun, laughter, and surprises await.
     </p>
 
-    <a class="hidden lg:block pr-4" href="https://docs.google.com/forms/d/e/1FAIpQLSePEVjMQiBHBggpPCSGhXThAVvLX57KfuFgmBX5LCca3q6m5A/viewform?usp=dialoga" target="_blank" rel="noopener">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSePEVjMQiBHBggpPCSGhXThAVvLX57KfuFgmBX5LCca3q6m5A/viewform?usp=dialoga" target="_blank" rel="noopener">
       <button class="raleway bg-orange-400 w-fit py-3 px-6 text-white rounded-lg">Sign up now</button>
     </a>
   </div>
