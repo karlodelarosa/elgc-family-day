@@ -19,7 +19,7 @@ onMounted(() => {
 
 const goalAmount = ref(200000)
 
-const currentTotal = ref(1500)
+const currentTotal = ref(400)
 
 const progressPercentage = computed(() => {
   const pct = (currentTotal.value / goalAmount.value) * 100
