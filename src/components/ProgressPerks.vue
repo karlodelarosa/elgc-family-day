@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue'
+import WeeklyMarkers from './WeeklyMarkers.vue'
 
 const messages = [
   "Be part of something special — Family Day 2026!",
@@ -30,7 +31,6 @@ const progressPercentage = computed(() => {
 <template>
   <div class="w-full sm:px-12 lg:px-24 py-20 lg:bg-gradient-to-br lg:from-indigo-50/40 lg:to-pink-50/40 rounded relative overflow-hidden">
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
-
     <!-- Left side: Story -->
     <div class="flex flex-col justify-center space-y-6 relative z-10">
       
@@ -99,6 +99,10 @@ const progressPercentage = computed(() => {
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="pt-12 mt-12 border-t border-gray-200">
+    <WeeklyMarkers />
   </div>
 </div>
 </template>

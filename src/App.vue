@@ -3,6 +3,7 @@ import Brand from './components/icons/Brand.vue';
 import Countdown from './components/Countdown.vue';
 import ImageCarousel from './components/ImageCarousel.vue';
 import ProgressPerks from './components/ProgressPerks.vue';
+import WeeklyMarkers from './components/WeeklyMarkers.vue';
 </script>
 
 <template>
@@ -180,22 +181,22 @@ import ProgressPerks from './components/ProgressPerks.vue';
     </div>
 
     <div class="relative z-10 h-screen p-6">
-  <div class="container mx-auto h-full flex flex-col justify-center items-center text-center space-y-6">
-    <h2
-      class="text-5xl lg:text-7xl font-extrabold bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 bg-clip-text text-transparent animate-gradient-slow drop-shadow-md"
-    >
-      Family Day 2026
-    </h2>
+      <div class="container mx-auto h-full flex flex-col justify-center items-center text-center space-y-6">
+        <h2
+          class="text-5xl lg:text-7xl font-extrabold bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 bg-clip-text text-transparent animate-gradient-slow drop-shadow-md"
+        >
+          Family Day 2026
+        </h2>
 
-    <p class="text-lg text-gray-600 max-w-md raleway">
-      Join us in making this Family Day unforgettable — fun, laughter, and surprises await. See you there!
-    </p>
+        <p class="text-lg text-gray-600 max-w-md raleway">
+          Join us in making this Family Day unforgettable — fun, laughter, and surprises await. See you there!
+        </p>
 
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSePEVjMQiBHBggpPCSGhXThAVvLX57KfuFgmBX5LCca3q6m5A/viewform?usp=dialoga" target="_blank" rel="noopener">
-      <button class="raleway bg-orange-400 w-fit py-3 px-6 text-white rounded-lg hover:bg-orange-500 transition-all cursor-pointer">Sign up now</button>
-    </a>
-  </div>
-</div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSePEVjMQiBHBggpPCSGhXThAVvLX57KfuFgmBX5LCca3q6m5A/viewform?usp=dialoga" target="_blank" rel="noopener">
+          <button class="raleway bg-orange-400 w-fit py-3 px-6 text-white rounded-lg hover:bg-orange-500 transition-all cursor-pointer">Sign up now</button>
+        </a>
+      </div>
+    </div>
 
 
   </div>
