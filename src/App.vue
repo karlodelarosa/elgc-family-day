@@ -86,17 +86,25 @@ import ProgressPerks from './components/ProgressPerks.vue';
           <div class="flex flex-col gap-y-10 ">
             <h2 class="text-5xl text-black/80 font-bold lg:text-6xl text-transparent bg-clip-text text-2xl animated-sunset-text bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600">More Than Just a Getaway</h2>
 
-            <div class="flex flex-col gap-y-6 text-xl">
+            <div class="flex flex-col gap-y-6 text-black/80">
               <p class="raleway">
-                Church isn’t just what happens inside four walls — it’s a family that grows, laughs, rests, and worships together.
+                Church isn’t just what happens inside four walls. It’s a family that grows, laughs, rests, and worships together.
               </p>
 
               <p class="raleway">
-                This Family Day is more than a break from routine — it’s a moment to reconnect with each other, build lasting memories, and enjoy God’s creation. Whether through a quiet moment by the sea or a laugh shared during a game, our goal is simple: to strengthen our bonds as one body in Christ.
+                This <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-purple-500 font-black">Family Day</span> is more than a break from routine. It’s a moment to reconnect with each other, build lasting memories, and enjoy God’s creation. Whether through a quiet moment by the sea or a laugh shared during a game, our goal is simple: to strengthen our bonds as one body in Christ.
               </p>
 
               <p class="raleway">
-                Let’s rest, rejoice, and remember why we’re better together.
+                To those we've walked with in past seasons — <strong>old friends, former members, and families we've fellowshipped with</strong> — this day is for you too. You're still part of our story and always welcome home.
+              </p>
+
+              <p class="raleway">
+                And to our new friends and growing households: welcome. You are an answered prayer and a blessing to our church family.
+              </p>
+
+              <p class="raleway">
+                Let’s rest, rejoice, and remember why we’re better together — not just for today, but for every season God leads us through.
               </p>
             </div>
 
