@@ -55,7 +55,7 @@ const formatDate = (date) => {
           : 'border border-gray-300 bg-white text-gray-600'"
       >
         <div>Week {{ week.number }}</div>
-        <div>{{ formatDate(week.start) }} – {{ formatDate(week.end) }}</div>
+        <div class="raleway">{{ formatDate(week.start) }} – {{ formatDate(week.end) }}</div>
       </div>
     </div>
 
