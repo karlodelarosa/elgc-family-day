@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 
 const messages = [
   "Be part of something special — Family Day 2026!",
@@ -15,6 +15,15 @@ onMounted(() => {
     currentIndex.value = (currentIndex.value + 1) % messages.length
     message.value = messages[currentIndex.value]
   }, 4000)
+})
+
+const goalAmount = ref(200000)
+
+const currentTotal = ref(1500)
+
+const progressPercentage = computed(() => {
+  const pct = (currentTotal.value / goalAmount.value) * 100
+  return pct > 100 ? 100 : parseFloat(pct.toFixed(2))
 })
 </script>
 
@@ -37,9 +46,12 @@ onMounted(() => {
         Every contribution fuels something special — from fun takeaways to comfortable travel to personalized keepsakes. As we reach each milestone, we unlock a unique reward for everyone involved.
       </p>
       <div class="h-2 w-full bg-gray-200 rounded-full overflow-hidden mt-4">
-        <div class="bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500 h-full rounded-full transition-all duration-500" style="width: 1%"></div>
+        <div
+          class="bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500 h-full rounded-full transition-all duration-700"
+          :style="{ width: progressPercentage + '%' }"
+        ></div>
       </div>
-      <p class="text-sm text-gray-500 italic">Current progress: 1% funded</p>
+      <p class="text-sm text-gray-500">Current progress: <span class="text-purple-700">{{ progressPercentage }}%</span> funded</p>
     </div>
 
     <!-- Right side: Cards -->
