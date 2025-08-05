@@ -49,20 +49,21 @@ const formatDate = (date) => {
       <div
         v-for="week in weeks"
         :key="week.number"
-        class="border rounded p-2 text-xs"
-        :class="{
-          'border-purple-700 bg-purple-50 shadow-md font-semibold text-purple-700': week.number === currentWeek,
-          'border-gray-300 bg-white text-gray-600': week.number !== currentWeek
-        }"
+        class="border rounded p-2 text-xs text-center transition-all duration-300"
+        :class="week.number === currentWeek
+          ? 'bg-gradient-to-r from-orange-400 via-pink-400 to-purple-400 text-white font-semibold shadow-sm border border-purple-400'
+          : 'border border-gray-300 bg-white text-gray-600'"
       >
         <div>Week {{ week.number }}</div>
         <div>{{ formatDate(week.start) }} – {{ formatDate(week.end) }}</div>
       </div>
     </div>
 
+
+
     <!-- Contribution Info -->
-    <div class="mt-6 p-4 bg-purple-100 border-l-4 border-purple-600 rounded">
-      <p class="text-sm text-purple-800">
+    <div class="mt-6 p-4 bg-purple-50 border-l-4 border-purple-300 rounded">
+      <p class="text-sm font-medium bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 bg-clip-text text-transparent animate-gradient">
         We're now on <span class="font-semibold">Week {{ currentWeek }}</span>
         ({{ formatDate(weeks[currentWeek - 1].start) }} – {{ formatDate(weeks[currentWeek - 1].end) }}).
         By now, you should have contributed:
