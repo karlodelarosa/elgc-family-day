@@ -3,7 +3,6 @@ import Brand from './components/icons/Brand.vue';
 import Countdown from './components/Countdown.vue';
 import ImageCarousel from './components/ImageCarousel.vue';
 import ProgressPerks from './components/ProgressPerks.vue';
-import WeeklyMarkers from './components/WeeklyMarkers.vue';
 </script>
 
 <template>

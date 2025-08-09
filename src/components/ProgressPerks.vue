@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue'
 import WeeklyMarkers from './WeeklyMarkers.vue'
+import RegisteredParticipants from './RegisteredParticipants.vue'
 
 const messages = [
   "Be part of something special — Family Day 2026!",
@@ -20,7 +21,7 @@ onMounted(() => {
 
 const goalAmount = ref(200000)
 
-const currentTotal = ref(400)
+const currentTotal = ref(800)
 
 const progressPercentage = computed(() => {
   const pct = (currentTotal.value / goalAmount.value) * 100
@@ -102,8 +103,14 @@ const progressPercentage = computed(() => {
   </div>
 
   <div class="pt-12 mt-12 border-t border-gray-200">
+    <RegisteredParticipants />
+  </div>
+
+  <div class="pt-12 mt-12 border-t border-gray-200">
     <WeeklyMarkers />
   </div>
+
+  
 </div>
 </template>
 
