@@ -3,7 +3,7 @@ import { computed, toRef } from 'vue'
 
 const props = defineProps({
   totalSlots: { type: Number, default: 100 },
-  registeredSlots: { type: Number, default: 20 },
+  registeredSlots: { type: Number, default: 44 },
   size: { type: Number, default: 30 },
   showLabel: { type: Boolean, default: true },
   sheetUrl: { type: String, default: 'https://docs.google.com/spreadsheets/d/1AyWIxlx25UlXicoSUVi2mvwTHiEdUhDTtbnHjWTRadI/edit?usp=sharing' }
